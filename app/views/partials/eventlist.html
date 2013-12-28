@@ -1,0 +1,17 @@
+<div>
+	<dl ng-repeat="event in events">
+		<dt>{{event.title}}</dt>
+		<dd>
+			{{event.date}}
+			{{event.space}}
+			<dl ng-repeat="session in event.detail">
+				<dt>{{session.title}}</dt>
+				<dd>
+					{{session.talker}}
+					{{session.belong}}
+					{{session.slide}}
+				</dd>
+			</dl>
+		</dd>
+	</dl>
+</div>
